@@ -5,7 +5,8 @@
 
 (function(){
 
-	// fix the query string, "bk=ec;chp=4;vs=9" is invalid and causes the hash ("bookmark") to be ignored (only in chrome, only for some books of the Bible)
+	// fix the query string, "bk=ec;chp=4;vs=9" is invalid and causes the hash ("bookmark")
+	//  to be ignored (only in chrome, only for some books of the Bible)
 	if(location.search.indexOf(';') != -1){
 		location.search = location.search.replace(';','&');
 	}
