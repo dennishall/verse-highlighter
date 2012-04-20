@@ -1,0 +1,19 @@
+{
+  "name" : "Verse highilghter for watchtower.org",
+  "version" : "1.0",
+  "description" : "Highlights verses with a light yellow background to make them stand out more",
+  "content_scripts" : [
+    {
+      "matches" : [
+        "http://www.jw.org/*",
+        "http://www.watchtower.org/*"
+      ],
+      "js" : ["contentscript.js"],
+      "run_at" : "document_end",
+      "all_frames" : true
+    }
+  ],
+  "icons" : {
+    "48" : "icon-48.png"
+  }
+}
